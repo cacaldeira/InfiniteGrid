@@ -32,7 +32,7 @@ public class Game {
         for (char c : directions.toCharArray())
             move(c);
 
-        System.out.println("Caught: " + counter);
+        System.out.println(counter);
     }
 
     private String cleanDirections(String directions) {

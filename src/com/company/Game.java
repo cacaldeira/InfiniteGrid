@@ -2,7 +2,6 @@ package com.company;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Game {
@@ -39,7 +38,7 @@ public class Game {
         if (directions == null || directions.isBlank())
             return "";
 
-        directions = directions.toUpperCase(Locale.ROOT);
+        directions = directions.toUpperCase();
         directions = directions.trim();
 
         return directions;
@@ -66,7 +65,6 @@ public class Game {
                 break;
 
             default:
-                //System.out.println("Unexpected input: " + direction);
                 return;
         }
 

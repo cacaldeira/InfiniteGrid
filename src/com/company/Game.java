@@ -21,7 +21,11 @@ public class Game {
 
     public void play() {
         System.out.println("Movement (N S E O):");
-        String directions = new Scanner(System.in).nextLine();
+        Scanner scanner = new Scanner(System.in);
+
+        String directions = scanner.hasNextLine() ? scanner.nextLine() : "";
+
+        scanner.close();
 
         directions = cleanDirections(directions);
 
